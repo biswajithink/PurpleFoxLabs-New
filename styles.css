@@ -280,10 +280,10 @@ footer .footMenu li:hover a, footer .footMenu li.active a{
   color: #6f2c91;  
   text-decoration: none;
 }
-/*footer .footMenu li a.activated, footer .footMenu li a.active{
+footer .footMenu li a.activated, footer .footMenu li a.active{
   color: #6f2c91;  
   text-decoration: none;
-}*/
+}
 
 .loginForm{
   width: 80%;
@@ -485,7 +485,8 @@ footer .footMenu li:hover a, footer .footMenu li.active a{
 }
 .blogItem a{
   text-align: center;
-  font-size: 16px;
+  font-size: 19px;
+  font-weight: bold;
   color: #fff;
   background: #702b90;
   border-radius: 22px;
