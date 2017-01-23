@@ -1,0 +1,8 @@
+<div class="container">
+<div class="blogItem" *ngFor="let blog of blogList">
+    <img src="{{blog.img}}">
+    <h2 [routerLink]="['/blogitem', blog.id]">{{blog.name}}</h2>
+    <p maxlength="80">{{blog.desc}}</p>
+        <a [routerLink]="['/blogitem', blog.id]">View More</a>
+</div>
+</div>

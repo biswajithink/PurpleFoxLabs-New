@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 floatRight clearfix">
+            <img class="foot_logo" src="app/images/footer-logo.png" alt="foot_logo">
+        </div>
+        <div class="col-md-6">
+            <ul class="footMenu clearfix">
+                <li><a routerLink="/" href="#">Home</a></li>
+                <li><a routerLink="/about" href="#">About</a></li>
+                <li><a routerLink="/games" href="#">Gemes</a></li>
+                <li><a routerLink="/blog" href="#">Blog</a></li>
+                <li><a routerLink="/contact" href="#">Contact</a></li>                
+            </ul>
+            
+            <a class="mailLink" href="mailTo:loremipsum@gmail.com">loremipsum@gmail.com</a>
+           <form [formGroup]="loginForm" (ngSubmit)="doLogin($event)" class="loginForm clearfix">
+                <input formControlName="email" type="text" placeholder="Email">                
+                <button type="submit">Subscribe</button>                
+            </form>
+            
+            <ul class="socialMenu clearfix">
+                <li><a href="#"><img src="app/images/footer-fb.png"></a></li>
+                <li><a href="#"><img src="app/images/footer-tw.png"></a></li>
+                <li><a href="#"><img src="app/images/footer-you.png"></a></li>                
+            </ul>
+            <p class="copyRight">&copy; 2010 - 2017 Purple Fox Labs. All right reserved.</p>
+        </div>             
+    </div>
+</div>
