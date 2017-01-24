@@ -18,7 +18,7 @@ export class BlogComponent {
  blogList:any = [
       {
       id: 1, 
-      name: "Blog 1",
+      name: "Lorem Ipsum is simply",
       desc:`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
@@ -26,7 +26,7 @@ export class BlogComponent {
       },
       {
         id: 2,
-        name: 'Blog 2',
+        name: 'Lorem Ipsum is simply',
         desc:`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
               when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
@@ -34,7 +34,7 @@ export class BlogComponent {
       },
       {
         id: 3,
-        name: 'Blog 3',
+        name: 'Lorem Ipsum is simply',
         desc:`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,

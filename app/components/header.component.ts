@@ -15,11 +15,11 @@ import * as JQuery from 'jquery';
     </label>
     
     <ul class="menuItem" >
-        <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-        <li ><a routerLink="/about" routerLinkActive="active">About</a></li>
-        <li ><a routerLink="/games" routerLinkActive="active">Games</a></li>
-        <li ><a routerLink="/blog" routerLinkActive="active">Blog</a></li>
-        <li ><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+        <li routerLinkActive="active"><a routerLink="/home">Home</a></li>
+        <li routerLinkActive="active"><a routerLink="/about">About</a></li>
+        <li routerLinkActive="active"><a routerLink="/games">Games</a></li>
+        <li routerLinkActive="active"><a routerLink="/blog">Blog</a></li>
+        <li routerLinkActive="active"><a routerLink="/contact">Contact</a></li>
         <li class="fb_bg"><a href="#"><img src="app/images/menuFb.png"></a></li>
         <li class="tw_bg"><a href="#"><img src="app/images/menuTwt.png"></a></li>
         <li class="yt_bg"><a href="#"><img src="app/images/menuYtb.png"></a></li>

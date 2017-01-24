@@ -11,6 +11,11 @@ import { BlogitemComponent }  from './components/blogitem.component';
 
 export const appRoutes : Routes =[
     {
+        path: '',
+        redirectTo: '/home',
+        pathMatch: 'full'
+    },
+    {
         path:'home',
         component:HomeComponent
     },
@@ -33,11 +38,7 @@ export const appRoutes : Routes =[
     {
         path:'blogitem/:id',
         component:BlogitemComponent
-    },
-    {
-        path:'**',
-        component:HomeComponent
-    } 
+    }
 ]
 
 export const appRoutingProviders: any[] = [
