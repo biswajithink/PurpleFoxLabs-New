@@ -13,9 +13,12 @@
             </ul>
             
             <a class="mailLink" href="mailTo:loremipsum@gmail.com">loremipsum@gmail.com</a>
-           <form [formGroup]="loginForm" (ngSubmit)="doLogin($event)" class="loginForm clearfix">
-                <input formControlName="email" type="text" placeholder="Email">                
-                <button type="submit">Subscribe</button>                
+            
+           <form [formGroup]="loginForm" (ngSubmit)="doLogin($event)" class="loginForm">
+                <input formControlName="email" type="text" placeholder="Email">                          
+                <button type="submit">Subscribe</button>
+                <span class="clearfix"></span>
+                <span id="error"></span>
             </form>
             
             <ul class="socialMenu clearfix">

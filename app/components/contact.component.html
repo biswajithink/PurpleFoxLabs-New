@@ -1,4 +1,42 @@
 <img class="img_full" src="app/images/contactus.jpg" alt="contactus">
-<div class="container">
-    <h1>This is Contact Page</h1>
+<div class="container contact_container">
+    <div class="row clearfix">        
+        <div class="col-md-6">
+            <h2>PURPLE FOX LABS - <span> Contact Form</span></h2>
+            <p>We will love to help you. Please get in touch with us for any queries.</p>
+            
+            <form [formGroup]="contactForm" (ngSubmit)="contactIn($event)" class="contactForm clearfix">
+                <input formControlName="name" id="name" type="text" placeholder="Full Name">
+                <input formControlName="email" type="text" placeholder="Email">  
+                <span id="error"></span>
+                <textarea formControlName="message" placeholder="Message" rows="6"></textarea>              
+                <button type="submit">Submit</button>                
+            </form>
+            
+            
+        </div>
+        <div class="col-md-6">
+            <h2>WHERE WE ARE</h2>
+            <i>Address:</i>
+            <h4>340, Sreenagar Gate - III, Madhyamgram<br>
+                Kolkata - 700129<br>
+                India
+            </h4>
+            <i>Phone:</i>
+            <h4>+91-9836639981</h4>
+            <i>Email Address:</i>
+            <a href="mailTo:info@purplefoxlabs.com"> info@purplefoxlabs.com</a>
+            <ul class="contact_social">
+                <li>
+                    <a href="#"><img src="app/images/contact_fb.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="app/images/contact_twt.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="app/images/contact_ytb.png"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>

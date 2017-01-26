@@ -1,8 +1,15 @@
+<img class="img_full" src="app/images/blog.jpg" alt="blog">
 <div class="container">
 <div class="blogItem" *ngFor="let blog of blogList">
-    <img src="{{blog.img}}">
-    <h2 [routerLink]="['/blogitem', blog.id]">{{blog.name}}</h2>
-    <p maxlength="80">{{blog.desc}}</p>
-        <a [routerLink]="['/blogitem', blog.id]">View More</a>
+    <div class="row">
+        <div class="col-md-12">
+            <h2 [routerLink]="['/blogitem', blog.id]">{{blog.name}}</h2>
+            <div class="blogImgDiv">
+                <img src="{{blog.img}}">    
+            </div>
+            <p maxlength="80">{{blog.desc}}</p>
+            <a [routerLink]="['/blogitem', blog.id]">Read More</a>
+        </div>
+    </div>
 </div>
 </div>

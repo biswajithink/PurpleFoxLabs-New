@@ -2,6 +2,7 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRouting, appRoutingProviders } from './app.routing';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent }  from './app.component';
 import { HomeComponent }  from './components/home.component';
@@ -30,3 +31,13 @@ import { FormsModule } from '@angular/forms';
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
+
+
+/*<form [formGroup]="contactForm" (ngSubmit)="contactIn($event)" class="contactForm clearfix">
+                <input formControlName="name" id="name" type="text" placeholder="Full Name">
+                <input formControlName="email" type="text" placeholder="Email">  
+                <span id="error"></span>
+                <textarea formControlName="message" placeholder="Message" rows="8"></textarea>              
+                <button type="submit">Subscribe</button>                
+            </form>
+            */
