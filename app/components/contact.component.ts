@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 
+
 @Component({
     moduleId:module.id,
     selector: 'contact',
@@ -21,7 +22,12 @@ export class ContactComponent  {
               return re.test(this.contactForm.value.email);
       }
 
-  constructor(public fb: FormBuilder) {}
+  constructor(public fb: FormBuilder) {
+
+
+
+
+  }
 
   contactIn() {
     if(this.contactForm.value.email == undefined || this.contactForm.value.email == ""){

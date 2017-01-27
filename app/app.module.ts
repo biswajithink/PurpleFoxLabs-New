@@ -15,15 +15,24 @@ import { ContactComponent }  from './components/contact.component';
 import { BlogitemComponent }  from './components/blogitem.component';
 
 import { FormsModule } from '@angular/forms';
+//import {AngularFireModule} from 'angularfire2';
 
+//import * as firebase from 'firebase';
 
-
-
+ /* var config = {
+    apiKey: "AIzaSyBL587TYOKqiDF6QTOykgilWLbCwxzd4Uk",
+    authDomain: "test-e2459.firebaseapp.com",
+    databaseURL: "https://test-e2459.firebaseio.com",
+    storageBucket: "test-e2459.appspot.com",
+    messagingSenderId: "573261486804"
+  };*/
+ // firebase.initializeApp(config);
 
 
 
 @NgModule({
-  imports:      [ BrowserModule, AppRouting, ReactiveFormsModule ,FormsModule ],
+  imports:      [ BrowserModule, AppRouting, ReactiveFormsModule ,FormsModule/*,
+  AngularFireModule.initializeApp(config)*/ ],
   declarations: [ AppComponent, HomeComponent, HeaderComponent, FooterComponent, AboutComponent, GamesComponent, BlogComponent, ContactComponent, BlogitemComponent ],
   providers: [
     appRoutingProviders

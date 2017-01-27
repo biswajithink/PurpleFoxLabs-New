@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6 floatRight clearfix">
-            <img class="foot_logo" src="app/images/footer-logo.png" alt="foot_logo">
+            <a class="footertextlink" routerLink="/home"  routerLinkActive="active"><img class="foot_logo" src="app/images/footer-logo.png" alt="foot_logo"></a>
         </div>
         <div class="col-md-6">
             <ul class="footMenu clearfix">
@@ -12,7 +12,7 @@
                 <li><a routerLink="/contact"  routerLinkActive="active">Contact</a></li>                
             </ul>
             
-            <a class="mailLink" href="mailTo:loremipsum@gmail.com">loremipsum@gmail.com</a>
+            <a class="mailLink" href="mailTo:info@purplefoxlabs.com">info@purplefoxlabs.com</a>
             
            <form [formGroup]="loginForm" (ngSubmit)="doLogin($event)" class="loginForm">
                 <input formControlName="email" type="text" placeholder="Email">                          
@@ -22,11 +22,11 @@
             </form>
             
             <ul class="socialMenu clearfix">
-                <li><a href="#"><img src="app/images/footer-fb.png"></a></li>
-                <li><a href="#"><img src="app/images/footer-tw.png"></a></li>
+                <li><a href="https://www.facebook.com/purplefoxlabs/" target="_blank"><img src="app/images/footer-fb.png"></a></li>
+                <li><a href="https://twitter.com/purplefoxlabs"><img src="app/images/footer-tw.png"></a></li>
                 <li><a href="#"><img src="app/images/footer-you.png"></a></li>                
             </ul>
-            <p class="copyRight">&copy; 2010 - 2017 Purple Fox Labs. All right reserved.</p>
+            <p class="copyRight">&copy; 2010 - 2017 <a class="footertextlink" routerLink="/home"  routerLinkActive="active">Purple Fox Labs</a>. All right reserved.</p>
         </div>             
     </div>
 </div>
