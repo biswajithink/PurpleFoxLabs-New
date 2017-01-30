@@ -104,6 +104,10 @@ header{
   width: 80%;
   margin: 0 auto;
 }
+header .navbar{
+  min-height: auto;
+  border: none;
+}
 .logo{
   float: left;
   width: 163px;
@@ -123,17 +127,16 @@ header{
   display: none;
   width: 40px;
   height: 40px;
-  background: #832990;
+  background: #832990 !important;
   border-radius: 4px;
   border: none;
-  margin: 48px 10px;
+  margin: 48px 10px !important;
+  padding: 0px !important;
   float: right;
 }
 .toggle_menu span{
-  width: 70%;
-  margin: 8px auto;
+  margin: 5px auto;
   display: block;
-  height: 3px;
   background: #fff;
 }
 .menuItem{
@@ -144,31 +147,30 @@ header{
 }
 .menuItem li{
   list-style: none;
-  float: left;
+  float: left !important;
   font-size: 16px;
   text-transform: uppercase;
   font-family: 'kenyan_coffeeregular';
 }
 .menuItem li a{
   display: block;
-  line-height: 34px;
-  padding: 8px 20px;
-  color: #535353;
-  line-height: 122px;
+  padding: 8px 20px !important;
+  color: #535353 !important;
+  line-height: 122px !important;
   font-size: 28px;
 }
 
 .menuItem li:hover a{
   text-decoration: none;
-  background: url("app/images/headMenuTop.png") no-repeat top center;
+  background: url("app/images/headMenuTop.png") no-repeat top center !important;
   background-size: 20px;
-  color: #832990;
+  color: #832990 !important;
 }
 .menuItem li.active a, .menuItem li.activated a, .menuItem li a:focus{
   text-decoration: none;
-  background: url("app/images/headMenuTop.png") no-repeat top center;
+  background: url("app/images/headMenuTop.png") no-repeat top center !important;
   background-size: 20px;
-  color: #832990;
+  color: #832990 !important;
 }
 .menuItem li a img{
   vertical-align: initial;
@@ -179,18 +181,22 @@ header{
 .fb_bg:hover{
   background: #3b5999 !important;
 }
+.menuItem .fb_bg:hover a{background: none !important;}
 .tw_bg{
   background: #159cda;
 }
 .tw_bg:hover{
   background: #159cda !important;
 }
+.menuItem .tw_bg:hover a{background: none !important;}
 .yt_bg{
   background: #c12f29;
 }
 .yt_bg:hover{
   background: #c12f29 !important;
 }
+.menuItem .yt_bg:hover a{background: none !important;}
+
 .fb_bg, .tw_bg, .yt_bg{
   width: 70px;
   text-align: center;
@@ -793,6 +799,7 @@ footer .footMenu li a.activated, footer .footMenu li a.active{
 
 /*  Media Queries  */
 
+
 @media screen and (max-width:1800px){
     footer .footMenu li a{
       display: block;
@@ -918,15 +925,30 @@ footer .footMenu li a.activated, footer .footMenu li a.active{
   }
 }
 
+@media (min-width: 991px){
+  
+  .navbar-header {
+    float: right !important;
+  }
+}
+@media (min-width:768px){
+  
+  .navbar-header {
+    float: right !important;
+  }
+}
+
 
 @media screen and (max-width:991px){
 
   header{
     width: 80%;
   }
-
+header .navbar{
+  margin-bottom: 0px;
+}
   .toggle_menu{
-    display: block;
+    display: block !important;
   }
 .menuItem li{
   display: block;
@@ -937,32 +959,30 @@ footer .footMenu li a.activated, footer .footMenu li a.active{
 }
 
 .menuItem li a{
-  color: #fff;
-  line-height: 40px;
+  color: #fff !important;
+  line-height: 40px !important;
 }
 .menuItem li:last-child{
   border-bottom: none;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-  .menuItem{
-    display: none;
-   
-  }
+  
   .menuItem {
-    position: absolute;
-    top: 137px;
     width: 100%;
     left: 0px;
     right: 0px;
-    background: rgba(63, 62, 64, 0.8);
+    margin: 0px !important;
+    background: rgba(63, 62, 64, 0.9);
     padding-left: 0px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);    
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-.menuItem li a:hover, .menuItem li a.active, .menuItem li a.activated, .menuItem li a:focus{
-  background: none;
+
+.menuItem li.active a, .menuItem li.activated a, .menuItem li a:focus{
+  background: none !important;
+  color: #fff !important;
 }
 .menuItem li:hover a{
   color: #fff;
@@ -1005,10 +1025,7 @@ footer .footMenu li a.activated, footer .footMenu li a.active{
     width: 122px;
   }
   .toggle_menu{
-    margin: 37px 10px;
-  }
-  .menuItem{
-    top: 114px;
+    margin: 37px 10px !important;
   }
   header{
     width: 90%;

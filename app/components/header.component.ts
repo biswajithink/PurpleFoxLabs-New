@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import * as JQuery from 'jquery';
 @Component({
+    moduleId:module.id,
   selector: 'header',
-  template: `
+  /*template: `
     <a class="logo" routerLink="/"><img src="app/images/logo.png" alt="logo"></a>
     <!--<ul class="menuItem">
         <li *ngFor="let menu of menuItem" (click)="setMenu(menu)"><a routerLink="/{{Routes.path}}">{{menu}}</a></li>
@@ -20,15 +21,13 @@ import * as JQuery from 'jquery';
         <li routerLinkActive="active"><a routerLink="/games">Games</a></li>
         <li routerLinkActive="active"><a routerLink="/blog">Blog</a></li>
         <li routerLinkActive="active"><a routerLink="/contact">Contact</a></li>
-        <li class="fb_bg"><a href="#"><img src="app/images/menuFb.png"></a></li>
-        <li class="tw_bg"><a href="#"><img src="app/images/menuTwt.png"></a></li>
+        <li class="fb_bg"><a href="https://www.facebook.com/purplefoxlabs/" target="_blank"><img src="app/images/menuFb.png"></a></li>
+        <li class="tw_bg"><a href="https://twitter.com/purplefoxlabs" target="_blank"><img src="app/images/menuTwt.png"></a></li>
         <li class="yt_bg"><a href="#"><img src="app/images/menuYtb.png"></a></li>
     </ul>
-
-    
-    <div class="clear"></div>
-    
-  `,
+    <div class="clear"></div>    
+  `,*/
+  templateUrl:'header.component.html'
 })
 export class HeaderComponent  {
     menuItem =['Home', 'About', 'Games', 'Blog', 'Contact'];
@@ -41,7 +40,7 @@ export class HeaderComponent  {
     
  
  }
- $(document).ready(function(){
+ /*$(document).ready(function(){
     $(".toggle_menu").click(function(){
         //$("ul.menuItem").toggle(1000);
         $("ul.menuItem").slideToggle();
@@ -50,4 +49,4 @@ export class HeaderComponent  {
     $("ul.menuItem:li").click(function(){
         $("ul.menuItem").slideToggle();
     })
-});
+});*/
