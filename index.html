@@ -32,7 +32,21 @@
   <body>
     <my-app>Loading AppComponent content here ...</my-app>
 
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    
+<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBL587TYOKqiDF6QTOykgilWLbCwxzd4Uk",
+    authDomain: "test-e2459.firebaseapp.com",
+    databaseURL: "https://test-e2459.firebaseio.com",
+    storageBucket: "test-e2459.appspot.com",
+    messagingSenderId: "573261486804"
+  };
+  firebase.initializeApp(config);
+</script>
   </body>
 </html>

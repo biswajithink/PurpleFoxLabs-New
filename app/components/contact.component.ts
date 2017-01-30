@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-
+declare var firebase : any;
 
 @Component({
     moduleId:module.id,
@@ -21,10 +21,16 @@ export class ContactComponent  {
               var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
               return re.test(this.contactForm.value.email);
       }
+address:string;
 
   constructor(public fb: FormBuilder) {
 
-
+ 
+      var ref = firebase.database().ref('/contact/' );//.child('user');
+      ref.on('value', (_snapshot:any) => {
+        console.log(_snapshot.val().address);
+        this.address=_snapshot.val().address;
+      });
 
 
   }
@@ -43,6 +49,8 @@ else{
     document.getElementById('error').innerHTML="";
     }
   }
+
+  
  }
 
 

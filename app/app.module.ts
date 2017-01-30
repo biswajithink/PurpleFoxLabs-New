@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRouting, appRoutingProviders } from './app.routing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+declare var firebase : any;
 
 import { AppComponent }  from './app.component';
 import { HomeComponent }  from './components/home.component';
